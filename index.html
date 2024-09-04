@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+<body>
+	<h1>The script async attribute</h1>
+<p id="p1">Hello World!</p>
+<script src="demo_async.js" async></script>
+
+<h1>The button autofocus attribute</h1>
+<button type="button" autofocus onclick="alert('Hello world!')">Click Me!</button>
+
+<h1>The audio autoplay attribute</h1>
+<p>Click on the play button to play a sound:</p>
+<audio controls autoplay>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h1>The input checked attribute</h1>
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" name="vehicle3" value="Boat" checked>
+  <label for="vehicle3"> I have a boat</label><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+<h1>The audio controls attribute</h1>
+<p>Click on the play button to play a sound:</p>
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h1>The button disabled attribute</h1>
+<button type="button" disabled>Click Me!</button>
+
+<h1>The script defer attribute</h1>
+<script src="demo_defer.js" defer></script>
+<p>The script above requests information from the paragraph below. Normally, this is not possible, because the script is executed before the paragraph exists.</p>
+<p id="p1">Hello World!</p>
+<p>However, the defer attribute specifies that the script should be executed later. This way the script can request information from the paragraph.</p>
+
+<h1>The img ismap attribute</h1>
+<a href="/action_page.php">
+  <img src="w3html.gif" alt="W3Schools.com" width="100" height="132" ismap>
+</a>
+<p>Click the image, and the click coordinates will be sent to the server as a URL query string.</p>
+
+<h1>The audio loop attribute</h1>
+<p>Click on the play button to play a sound:</p>
+<audio controls loop>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<h1>The input multiple attribute</h1>
+<p>Try selecting more than one file when browsing for files.</p>
+
+<form action="/action_page.php">
+  <label for="files">Select files:</label>
+  <input type="file" id="files" name="files" multiple><br><br>
+  <input type="submit">
+</form>
+
+<h1>The video muted attribute</h1>
+<video width="320" height="240" controls muted>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+
+<h1>The form novalidate attribute</h1>
+<form action="/action_page.php" novalidate>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+<p><strong>Note:</strong> The novalidate attribute of the form tag is not supported in Safari 10 (or earlier).</p>
+
+<h1>The details open attribute</h1>
+<details open>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<p>This example demonstrates a details element that is open by default.</p>
+
+<h1>The input readonly attribute</h1>
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="country">Country:</label>  
+  <input type="text" id="country" name="country" value="Norway" readonly><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>The input required attribute</h1>
+<form action="/action_page.php">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required>
+  <input type="submit">
+</form>
+
+<h1>The ol reversed attribute</h1>
+<ol reversed>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+<p><strong>Note:</strong> The reversed attribute of the ol tag is not supported in Edge prior version 79.</p>
+<h1>The option selected attribute</h1>
+<label for="cars">Choose a car:</label>
+<select id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="vw">VW</option>
+  <option value="audi" selected>Audi</option>
+</select>
+
+</body>
+</html>
